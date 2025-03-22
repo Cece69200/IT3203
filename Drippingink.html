@@ -13,16 +13,7 @@
     </header>
     
     <nav>
-                    <ul>
-            <li><a href="index.html">Home</a></li>
-              <li><a href="Drippingink.html">Drippingink</a></li>
-            <li><a href="Refrencecode.html">References</a></li>
-        </ul>
-
-       
-    </nav>
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,16 +34,17 @@
             font-size: 2em;
             font-weight: bold;
         }
-        .hero {
+        .gallery {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
             padding: 50px;
         }
-        .hero img {
-            width: 80%;
-            max-width: 600px;
+        .gallery img {
+            width: 30%;
+            max-width: 300px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -61,14 +53,18 @@
             font-size: 1.2em;
             color: #333;
             max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
     <div class="header">Dripping Ink</div>
-    <div class="hero">
-        <img src="https://example.com/dripping-paintbrush.jpg" alt="Dripping Paint Brushes">
-        <p class="description">Welcome to Dripping Ink - a celebration of art and creativity. Explore the beauty of artistic expression through the works of Frida Kahlo, Diego Rivera, WAK, and Mrs. Ringold.</p>
+    <div class="description">Welcome to Dripping Ink - a celebration of art and creativity. Explore the beauty of artistic expression through the works of Frida Kahlo, Diego Rivera, and WAK.</div>
+    <div class="gallery">
+        <img src="https://example.com/frida-kahlo-art.jpg" alt="Artwork by Frida Kahlo">
+        <img src="https://example.com/diego-rivera-art.jpg" alt="Artwork by Diego Rivera">
+        <img src="https://example.com/wak-art.jpg" alt="Artwork by WAK">
     </div>
 </body>
 </html>
