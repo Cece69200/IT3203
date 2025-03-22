@@ -19,6 +19,26 @@
             font-size: 2em;
             font-weight: bold;
         }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
         .gallery {
             display: flex;
             justify-content: center;
@@ -57,21 +77,17 @@
 </head>
 <body>
     <div class="header">Dripping Ink</div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Drippingink.html">Drippingink</a></li>
+            <li><a href="Refrencecode.html">References</a></li>
+        </ul>
+    </nav>
+
     <div class="description">Welcome to Dripping Ink - a celebration of art and creativity. Explore the beauty of artistic expression through the works of Frida Kahlo, Diego Rivera, and WAK. These artists have greatly inspired me on my artistic journey, influencing my work in painting, tattoos, and clothing design.</div>
     
     <div class="gallery">
         <div>
-            <img src="https://www.fridakahlo.org/assets/img/paintings/the-two-fridas.jpg"Artwork by Frida Kahlo">
-            <div class="artist-info"><strong>Frida Kahlo:</strong> A Mexican painter known for her self-portraits and works inspired by nature and Mexican culture. Her art explores themes of identity, pain, and resilience.</div>
-        </div>
-        <div>
-            <img src="https://stories.vassar.edu/2016/assets/images/161116-hipsters-wall.jpg" alt="Artwork by Diego Rivera">
-            <div class="artist-info"><strong>Diego Rivera:</strong> A prominent Mexican muralist whose large-scale frescoes tell the stories of social and political struggles, indigenous heritage, and labor movements.</div>
-        </div>
-        <div>
-            <img src="https://www.itsablackthang.com/cdn/shop/products/ART-1409-2.jpeg?v=1402582205" alt="Artwork by WAK">
-            <div class="artist-info"><strong>WAK (Kevin A. Williams):</strong> A contemporary African American artist celebrated for his vibrant, soulful depictions of Black culture, love, and empowerment.</div>
-        </div>
-    </div>
-</body>
-</html>
