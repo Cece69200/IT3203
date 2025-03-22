@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dripping Ink</title>
-    <link rel="stylesheet" href="Style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -48,8 +47,12 @@
             gap: 20px;
             padding: 50px;
         }
-        .gallery img {
+        .gallery div {
             width: 30%;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
             max-width: 300px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -59,29 +62,46 @@
             font-size: 1.2em;
             color: #333;
             max-width: 600px;
-            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .artist-info {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #555;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
     <div class="header">Dripping Ink</div>
 
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Drippingink.html">Dripping Ink</a></li>
+            <li><a href="Drippingink.html">Drippingink</a></li>
             <li><a href="Refrencecode.html">References</a></li>
         </ul>
     </nav>
 
-    <div class="description">
-        Welcome to Dripping Ink - a celebration of art and creativity. Explore the beauty of artistic expression through the works of Frida Kahlo, Diego Rivera, and WAK.
-    </div>
-
+    <div class="description">Welcome to Dripping Ink - a celebration of art and creativity. Explore the beauty of artistic expression through the works of Frida Kahlo, Diego Rivera, and WAK. These artists have greatly inspired me on my artistic journey, influencing my work in painting, tattoos, and clothing design.</div>
+    
     <div class="gallery">
-        <img src="https://www.fridakahlo.org/assets/img/paintings/the-two-fridas.jpg" alt="Artwork by Frida Kahlo">
-        <img src="https://stories.vassar.edu/2016/assets/images/161116-hipsters-wall.jpg" alt="Artwork by Diego Rivera">
-        <img src="https://www.itsablackthang.com/cdn/shop/products/ART-1409-2.jpeg?v=1402582205" alt="Artwork by WAK">
+        <div>
+            <img src="https://www.fridakahlo.org/assets/img/paintings/the-two-fridas.jpg" alt="Artwork by Frida Kahlo">
+            <div class="artist-info"><strong>Frida Kahlo:</strong> A Mexican painter known for her self-portraits and works inspired by nature and Mexican culture. Her art explores themes of identity, pain, and resilience.</div>
+        </div>
+        <div>
+            <img src="https://stories.vassar.edu/2016/assets/images/161116-hipsters-wall.jpg" alt="Artwork by Diego Rivera">
+            <div class="artist-info"><strong>Diego Rivera:</strong> A prominent Mexican muralist whose large-scale frescoes tell the stories of social and political struggles, indigenous heritage, and labor movements.</div>
+        </div>
+        <div>
+            <img src="https://www.itsablackthang.com/cdn/shop/products/ART-1409-2.jpeg?v=1402582205" alt="Artwork by WAK">
+            <div class="artist-info"><strong>WAK (Kevin A. Williams):</strong> A contemporary African American artist celebrated for his vibrant, soulful depictions of Black culture, love, and empowerment.</div>
+        </div>
     </div>
 </body>
 </html>
