@@ -3,28 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table of Contents - Dripping Ink</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-    <header>
-        <h1>Table of Contents</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-              <li><a href="Drippingink.html">Drippingink</a></li>
-            <li><a href="Refrencecode.html">References</a></li>
-        </ul>
-    </nav>
-
-    <main>
-       <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dripping Ink</title>
     <style>
         body {
@@ -41,72 +19,55 @@
             font-size: 2em;
             font-weight: bold;
         }
-        nav {
-            background: #333;
-            padding: 10px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
         .gallery {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             gap: 20px;
-            padding: 20px;
+            padding: 50px;
         }
-        .instagram-post {
-            width: 100%;
-            max-width: 400px;
-            margin: auto;
+        .gallery img {
+            width: 30%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .artist-info {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+            font-size: 1em;
+            color: #555;
         }
     </style>
-
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Hi, I'm an artist born in Michigan. I create everything from paintings, clothing, and tattoos to face painting.</p>
-        <div class="instagram-post">
-            <iframe src="https://www.instagram.com/p/CrCHgiBg-CB/embed" width="400" height="500" frameborder="0"></iframe>
+</head>
+<body>
+    <div class="header">Dripping Ink</div>
+    <div class="description">Welcome to Dripping Ink - a celebration of art and creativity. Explore the beauty of artistic expression through the works of Frida Kahlo, Diego Rivera, and WAK. These artists have greatly inspired me on my artistic journey, influencing my work in painting, tattoos, and clothing design.</div>
+    
+    <div class="gallery">
+        <div>
+            <img src="https://example.com/frida-kahlo-art.jpg" alt="Artwork by Frida Kahlo">
+            <div class="artist-info"><strong>Frida Kahlo:</strong> A Mexican painter known for her self-portraits and works inspired by nature and Mexican culture. Her art explores themes of identity, pain, and resilience.</div>
+        </div>
+        <div>
+            <img src="https://example.com/diego-rivera-art.jpg" alt="Artwork by Diego Rivera">
+            <div class="artist-info"><strong>Diego Rivera:</strong> A prominent Mexican muralist whose large-scale frescoes tell the stories of social and political struggles, indigenous heritage, and labor movements.</div>
+        </div>
+        <div>
+            <img src="https://example.com/wak-art.jpg" alt="Artwork by WAK">
+            <div class="artist-info"><strong>WAK (Kevin A. Williams):</strong> A contemporary African American artist celebrated for his vibrant, soulful depictions of Black culture, love, and empowerment.</div>
         </div>
     </div>
-
-    <div class="container">
-        <h2>My Artwork</h2>
-        <div class="gallery">
-            <div class="instagram-post">
-                <iframe src="https://www.instagram.com/reel/C1YLzUaAHVp/embed" width="400" height="500" frameborder="0"></iframe>
-            </div>
-            <div class="instagram-post">
-                <iframe src="https://www.instagram.com/p/CH9E8SlgFhP/embed" width="400" height="500" frameborder="0"></iframe>
-            </div>
-            <div class="instagram-post">
-                <iframe src="https://www.instagram.com/reel/C1YB0cwgDv4/embed" width="400" height="500" frameborder="0"></iframe>
-            </div>
-        </div>
-    </div>
-
 </body>
 </html>
  
