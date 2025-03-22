@@ -1,35 +1,10 @@
-<!DOCTYPE html> 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dripping Ink</title>
-    <link rel="stylesheet" href="Style.css">
-   </head>
-<body>
-    <header>
-        <h1>Table of Contents</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-              <li><a href="Drippingink.html">Drippingink</a></li>
-            <li><a href="Refrencecode.html">References</a></li>
-        </ul>
-    </nav>
-</head>
-<body>
-    <header>
-        <h1>Dripping Ink</h1>
-        <p>Where creativity flows freely</p>
-    </header>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dripping Ink</title>
+    <link rel="stylesheet" href="Style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,6 +19,26 @@
             padding: 20px;
             font-size: 2em;
             font-weight: bold;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
         }
         .gallery {
             display: flex;
@@ -64,14 +59,25 @@
             font-size: 1.2em;
             color: #333;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
     <div class="header">Dripping Ink</div>
-    <div class="description">Welcome to Dripping Ink - a celebration of art and creativity. Explore the beauty of artistic expression through the works of Frida Kahlo, Diego Rivera, and WAK.</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Drippingink.html">Dripping Ink</a></li>
+            <li><a href="Refrencecode.html">References</a></li>
+        </ul>
+    </nav>
+
+    <div class="description">
+        Welcome to Dripping Ink - a celebration of art and creativity. Explore the beauty of artistic expression through the works of Frida Kahlo, Diego Rivera, and WAK.
+    </div>
+
     <div class="gallery">
         <img src="https://www.fridakahlo.org/assets/img/paintings/the-two-fridas.jpg" alt="Artwork by Frida Kahlo">
         <img src="https://stories.vassar.edu/2016/assets/images/161116-hipsters-wall.jpg" alt="Artwork by Diego Rivera">
@@ -79,5 +85,3 @@
     </div>
 </body>
 </html>
-    
-   
