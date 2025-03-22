@@ -39,55 +39,64 @@
             text-decoration: none;
             font-size: 1.2em;
         }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
         .gallery {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             gap: 20px;
-            padding: 50px;
+            padding: 20px;
         }
-        .gallery div {
-            width: 30%;
-            text-align: center;
-        }
-        .gallery img {
+        .instagram-post {
             width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .description {
-            margin-top: 20px;
-            font-size: 1.2em;
-            color: #333;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .artist-info {
-            margin-top: 10px;
-            font-size: 1.1em;
-            color: #555;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 400px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
+
     <div class="header">Dripping Ink</div>
 
-    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Drippingink.html">Drippingink</a></li>
+            <li><a href="Drippingink.html">Dripping Ink</a></li>
             <li><a href="Refrencecode.html">References</a></li>
         </ul>
     </nav>
 
-    <div class="description">Welcome to Dripping Ink - a celebration of art and creativity. Explore the beauty of artistic expression through the works of Frida Kahlo, Diego Rivera, and WAK. These artists have greatly inspired me on my artistic journey, influencing my work in painting, tattoos, and clothing design.</div>
-    
-    <div class="gallery">
-        <div>
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hi, I'm an artist born in Michigan. I create everything from paintings, clothing, and tattoos to face painting.</p>
+        <div class="instagram-post">
+            <iframe src="https://www.instagram.com/p/CrCHgiBg-CB/embed" width="400" height="500" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>My Artwork</h2>
+        <div class="gallery">
+            <div class="instagram-post">
+                <iframe src="https://www.instagram.com/reel/C1YLzUaAHVp/embed" width="400" height="500" frameborder="0"></iframe>
+            </div>
+            <div class="instagram-post">
+                <iframe src="https://www.instagram.com/p/CH9E8SlgFhP/embed" width="400" height="500" frameborder="0"></iframe>
+            </div>
+            <div class="instagram-post">
+                <iframe src="https://www.instagram.com/reel/C1YB0cwgDv4/embed" width="400" height="500" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
