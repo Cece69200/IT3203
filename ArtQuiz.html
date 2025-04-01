@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtQuiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .quiz-container { max-width: 400px; margin: auto; }
+        button { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Drippingink.html">Drippingink</a></li>
+            <li><a href="Refrencecode.html">References</a></li>
+            <li><a href="ArtQuiz.html">ArtQuiz</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Art Quiz</h1>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <p>1. What is Frida Kahlo best known for?</p>
+            <input type="radio" name="q1" value="a"> Self-portraits<br>
+            <input type="radio" name="q1" value="b"> Sculptures<br>
+            <input type="radio" name="q1" value="c"> Photography<br>
+            
+            <p>2. Who was Frida's husband?</p>
+            <input type="radio" name="q2" value="a"> Pablo Picasso<br>
+            <input type="radio" name="q2" value="b"> Diego Rivera<br>
+            <input type="radio" name="q2" value="c"> Vincent van Gogh<br>
+            
+            <p>3. WAK’s art represents:</p>
+            <input type="radio" name="q3" value="a"> African American culture<br>
+            <input type="radio" name="q3" value="b"> Pop Art<br>
+            <input type="radio" name="q3" value="c"> Abstract Expressionism<br>
+            
+            <p>4. What is Diego Rivera known for?</p>
+            <input type="radio" name="q4" value="a"> Murals<br>
+            <input type="radio" name="q4" value="b"> Surrealist Paintings<br>
+            <input type="radio" name="q4" value="c"> clay art<br>
+            
+            <p>5. Which themes appear in Frida’s art? (Select all that apply)</p>
+            <input type="checkbox" name="q5" value="a"> Identity<br>
+            <input type="checkbox" name="q5" value="b"> anime<br>
+            <input type="checkbox" name="q5" value="c"> Space Exploration<br>
+            
+            <button type="button" onclick="submitQuiz()">Submit</button>
+            <button type="button" onclick="restartQuiz()">Restart</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const answers = { q1: 'a', q2: 'b', q3: 'a', q4: 'a', q5: ['a'] };
+            
+            if (document.querySelector('input[name="q1"]:checked')?.value === answers.q1) score++;
+            if (document.querySelector('input[name="q2"]:checked')?.value === answers.q2) score++;
+            if (document.querySelector('input[name="q3"]:checked')?.value === answers.q3) score++;
+            if (document.querySelector('input[name="q4"]:checked')?.value === answers.q4) score++;
+            
+            let q5Answers = [...document.querySelectorAll('input[name="q5"]:checked')].map(el => el.value);
+            if (JSON.stringify(q5Answers.sort()) === JSON.stringify(answers.q5.sort())) score++;
+            
+            document.getElementById('result').innerText = `Score: ${score}/5`;
+        }
+        
+        function restartQuiz() {
+            document.getElementById('quizForm').reset();
+            document.getElementById('result').innerText = '';
+        }
+    </script>
+</body>
+</html>
