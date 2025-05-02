@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .quiz-container { max-width: 500px; margin: auto; }
+        button { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+             <li><a href="index.html">Home</a></li>
+            <li><a href="Drippingink.html">Drippingink</a></li>
+            <li><a href="Refrencecode.html">References</a></li>
+            <li><a href="HistoryQuiz.html">ArtQuiz</a></li>
+        </ul>
+    </nav>
+
+    <h1>Web Development Over the Years</h1>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <p>1. What year was HTML first introduced?</p>
+            <input type="radio" name="q1" value="a"> 1989<br>
+            <input type="radio" name="q1" value="b"> 1991<br>
+            <input type="radio" name="q1" value="c"> 1995<br>
+
+            <p>2. Who is known as the inventor of the World Wide Web?</p>
+            <input type="radio" name="q2" value="a"> Steve Jobs<br>
+            <input type="radio" name="q2" value="b"> Bill Gates<br>
+            <input type="radio" name="q2" value="c"> Tim Berners-Lee<br>
+
+            <p>3. Which programming language is primarily used for adding interactivity to websites?</p>
+            <input type="radio" name="q3" value="a"> CSS<br>
+            <input type="radio" name="q3" value="b"> JavaScript<br>
+            <input type="radio" name="q3" value="c"> Python<br>
+
+            <p>4. Fill in the blank: CSS stands for _____ Style Sheets.</p>
+            <input type="text" name="q4"><br>
+
+            <p>5. What is responsive web design primarily used for?</p>
+            <input type="radio" name="q5" value="a"> Making websites faster<br>
+            <input type="radio" name="q5" value="b"> Making websites look good on all screen sizes<br>
+            <input type="radio" name="q5" value="c"> Protecting against hackers<br>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+            <button type="button" onclick="restartQuiz()">Restart</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const answers = {
+                q1: 'b',
+                q2: 'c',
+                q3: 'b',
+                q4: 'Cascading',
+                q5: 'b'
+            };
+
+            if (document.querySelector('input[name="q1"]:checked')?.value === answers.q1) score++;
+            if (document.querySelector('input[name="q2"]:checked')?.value === answers.q2) score++;
+            if (document.querySelector('input[name="q3"]:checked')?.value === answers.q3) score++;
+
+            const q4Answer = document.querySelector('input[name="q4"]').value.trim();
+            if (q4Answer.toLowerCase() === answers.q4.toLowerCase()) score++;
+
+            if (document.querySelector('input[name="q5"]:checked')?.value === answers.q5) score++;
+
+            const resultText = `Score: ${score}/5\n` + (score >= 3 ? 'You Pass!' : 'You Fail.');
+            document.getElementById('result').innerText = resultText;
+        }
+
+        function restartQuiz() {
+            document.getElementById('quizForm').reset();
+            document.getElementById('result').innerText = '';
+        }
+    </script>
+</body>
+</html>
