@@ -1,151 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InsightPulse - Web Analytics</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f3f1f9;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Analytics 101</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f2fa;
+      color: #333;
+      text-align: center;
+    }
 
-        .header {
-            background: linear-gradient(to right, purple, pink, blue);
-            color: white;
-            padding: 30px 20px;
-            font-size: 2.5em;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
+    .header {
+      background: linear-gradient(to right, purple, pink, blue);
+      color: white;
+      padding: 40px 20px;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
 
-        nav {
-            background: #222;
-            padding: 10px 0;
-        }
+    nav {
+      background-color: #222;
+      padding: 10px 0;
+    }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-        }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: color 0.3s;
-        }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
 
-        nav ul li a:hover {
-            color: #ff69b4;
-        }
+    nav ul li a:hover {
+      color: #ff69b4;
+    }
 
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 30px;
-            background: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
 
-        .section-title {
-            color: #4b0082;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
+    .section-title {
+      font-size: 1.8em;
+      color: #6a1b9a;
+      margin-bottom: 15px;
+    }
 
-        .analytics-cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
 
-        .card {
-            background: linear-gradient(to bottom right, #ffc0cb, #d8b6ff);
-            border-radius: 12px;
-            padding: 20px;
-            width: 280px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        }
+    .benefit-box {
+      background: linear-gradient(to bottom right, #ffc0cb, #b39ddb);
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      color: #333;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-        .card h3 {
-            margin-top: 0;
-            color: #4b0082;
-        }
-
-        .card p {
-            font-size: 0.95em;
-        }
-
-        .iframe-wrapper {
-            margin-top: 20px;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            padding: 15px;
-            font-size: 0.9em;
-        }
-    </style>
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="header">InsightPulse</div>
+  <div class="header">Web Analytics 101</div>
 
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
+  <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
             <li><a href="Drippingink.html">Drippingink</a></li>
             <li><a href="Refrencecode.html">References</a></li>
-            <li><a href="HistoryQuiz.html">ArtQuiz</a></li>  
-        </ul>
-    </nav>
+            <li><a href="HistoryQuiz.html">ArtQuiz</a></li>
+    </ul>
+  </nav>
 
-    <div class="container">
-        <h2 class="section-title">About InsightPulse</h2>
-        <p>InsightPulse provides real-time web analytics to help you monitor traffic, understand user behavior, and make data-driven decisions for your online business.</p>
+  <div class="container">
+    <h2 class="section-title">What is Web Analytics?</h2>
+    <p>
+      Web analytics is the process of collecting, analyzing, and reporting website data to understand and improve online performance. It helps website owners and businesses track visitor behavior, measure traffic sources, and evaluate the effectiveness of their content and marketing efforts.
+    </p>
+    <p>
+      By using tools like Google Analytics, website administrators can learn what pages people visit, how long they stay, what devices they use, and where they're coming from.
+    </p>
+  </div>
+
+  <div class="container">
+    <h2 class="section-title">Why is Web Analytics Important?</h2>
+    <div class="benefits">
+      <div class="benefit-box">
+        <h3>Understand Your Audience</h3>
+        <p>Track who visits your site and how they interact with your content.</p>
+      </div>
+      <div class="benefit-box">
+        <h3>Improve User Experience</h3>
+        <p>Discover which pages work best and where users drop off.</p>
+      </div>
+      <div class="benefit-box">
+        <h3>Boost Conversions</h3>
+        <p>Use data to optimize marketing and increase sales or engagement.</p>
+      </div>
     </div>
+  </div>
 
-    <div class="container">
-        <h2 class="section-title">Key Metrics</h2>
-        <div class="analytics-cards">
-            <div class="card">
-                <h3>Traffic Overview</h3>
-                <p>Monitor real-time visits, bounce rates, and session durations across all platforms.</p>
-            </div>
-            <div class="card">
-                <h3>User Demographics</h3>
-                <p>Track where your users come from, their devices, and their interests.</p>
-            </div>
-            <div class="card">
-                <h3>Conversion Funnels</h3>
-                <p>Visualize how users move through your site and where drop-offs occur.</p>
-            </div>
-        </div>
+  <div class="container">
+    <h2 class="section-title">Example Tool: Google Analytics</h2>
+    <p>
+      Google Analytics is one of the most popular tools for web analytics. It provides dashboards and detailed reports on website traffic, user behavior, real-time visitors, and much more.
+    </p>
+    <div style="margin-top: 20px;">
+      <iframe src="https://www.youtube.com/embed/4_ZiJGY5F38" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
     </div>
+  </div>
 
-    <div class="container">
-        <h2 class="section-title">Live Dashboard Preview</h2>
-        <div class="iframe-wrapper">
-            <!-- Placeholder: Replace with a live embed or data chart service if needed -->
-            <iframe src="https://charts.mongodb.com/charts-project-0-bxwnm/embed/charts?id=exampleID" width="100%" height="400" frameborder="0"></iframe>
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2025 InsightPulse. All rights reserved.
-    </footer>
+  <footer>
+    &copy; 2025 Web Analytics 101. All rights reserved.
+  </footer>
 
 </body>
 </html>
+
