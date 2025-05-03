@@ -54,32 +54,31 @@
       color: #444;
     }
 
-    .gallery {
+    .examples {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
       padding: 40px 20px;
     }
 
-    .gallery div {
-      width: 300px;
+    .example-box {
       background: linear-gradient(to bottom right, #ffc0cb, #d1c4e9);
       border-radius: 15px;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      text-align: center;
-      padding: 15px;
+      padding: 20px;
+      max-width: 700px;
+      text-align: left;
     }
 
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+    .example-title {
+      font-size: 1.3em;
+      color: #4a148c;
+      margin-bottom: 10px;
+      font-weight: bold;
     }
 
-    .tech-info {
-      margin-top: 10px;
+    .example-text {
       font-size: 1em;
       color: #333;
     }
@@ -92,40 +91,50 @@
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="ExamplesOfWebAnalytics">ExamplesOfWebAnalytics</a></li>
+      <li><a href="ExamplesOfWebAnalytics.html">ExamplesOfWebAnalytics</a></li>
       <li><a href="Refrencecode.html">References</a></li>
       <li><a href="HistoryQuiz.html">ArtQuiz</a></li>
     </ul>
   </nav>
 
   <div class="description">
-    Web analytics helps us understand how visitors use a website. Below are some key examples and tools used in web analytics to monitor user behavior, site traffic, and performance.
+    Web analytics helps businesses understand how visitors use a website. Here are key examples of how it is applied in real-world scenarios.
   </div>
 
-  <div class="gallery">
-    <div>
-      <img src="https://assets.digitalocean.com/articles/analytics/ga-dashboard.png" alt="Google Analytics Dashboard">
-      <div class="tech-info"><strong>Google Analytics:</strong> Tracks page views, bounce rates, and user behavior across your site.</div>
+  <div class="examples">
+    <div class="example-box">
+      <div class="example-title">Tracking Traffic Sources</div>
+      <div class="example-text">
+        Analyzing which channels (e.g., search engines, social media, email campaigns) are driving the most visitors to a website helps optimize marketing efforts.
+      </div>
     </div>
 
-    <div>
-      <img src="https://matomo.org/wp-content/uploads/2020/12/matomo-tag-manager-dark-mode.jpg" alt="Matomo Screenshot">
-      <div class="tech-info"><strong>Matomo:</strong> An open-source alternative to GA with strong privacy features and custom dashboards.</div>
+    <div class="example-box">
+      <div class="example-title">Analyzing User Behavior</div>
+      <div class="example-text">
+        Examining how users navigate a website, which pages they visit most often, and where they drop off can reveal areas for improvement in user experience.
+      </div>
     </div>
 
-    <div>
-      <img src="https://mixpanel.com/blog/content/images/2023/04/Insights-Report-Builder.png" alt="Mixpanel Analytics">
-      <div class="tech-info"><strong>Mixpanel:</strong> Focuses on product analytics—great for understanding user actions and conversion funnels.</div>
+    <div class="example-box">
+      <div class="example-title">Monitoring Conversions</div>
+      <div class="example-text">
+        Tracking key actions users take on a website, such as making a purchase or filling out a form, provides insights into the effectiveness of marketing campaigns and website design.
+      </div>
     </div>
 
-    <div>
-      <img src="https://cdn.optimizely.com/img/optimizely-blog/optimizely-dashboard.jpg" alt="Optimizely Dashboard">
-      <div class="tech-info"><strong>Optimizely:</strong> Combines web analytics with A/B testing to optimize user experience.</div>
+    <div class="example-box">
+      <div class="example-title">A/B Testing</div>
+      <div class="example-text">
+        Using web analytics to compare different versions of a webpage or email to see which performs better, helping optimize for better user engagement and conversions.
+      </div>
     </div>
 
-    <div>
-      <img src="https://uploads-ssl.webflow.com/620e27a3ff5bba1e2f95d973/6213b647e973db21d8a3f089_hotjar-screenshot.webp" alt="Hotjar Heatmap">
-      <div class="tech-info"><strong>Hotjar:</strong> Uses heatmaps and recordings to visualize user clicks, scrolls, and engagement.</div>
+    <div class="example-box">
+      <div class="example-title">Keyword Research</div>
+      <div class="example-text">
+        Analyzing which keywords drive traffic to a website helps identify opportunities for improving SEO and targeting the right audience.
+      </div>
     </div>
   </div>
 
