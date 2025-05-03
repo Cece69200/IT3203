@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Analytics Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f9f5ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background: #6200ea;
+      padding: 12px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #7b1fa2;
+      margin-top: 20px;
+    }
+
+    .quiz-container {
+      max-width: 600px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    button {
+      margin: 15px 5px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    #result {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #4a148c;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ExamplesOfWebAnalytics.html">Examples</a></li>
+      <li><a href="Refrencecode.html">References</a></li>
+      <li><a href="Quiz.html">ArtQuiz</a></li>
+    </ul>
+  </nav>
+
+  <h1>Web Analytics Quiz</h1>
+  <div class="quiz-container">
+    <form id="quizForm">
+      <p>1. What does web analytics primarily help with?</p>
+      <input type="radio" name="q1" value="a"> Designing logos<br>
+      <input type="radio" name="q1" value="b"> Understanding user behavior<br>
+      <input type="radio" name="q1" value="c"> Writing blog posts<br>
+
+      <p>2. Which tool is widely used for web analytics?</p>
+      <input type="radio" name="q2" value="a"> Google Docs<br>
+      <input type="radio" name="q2" value="b"> Microsoft Paint<br>
+      <input type="radio" name="q2" value="c"> Google Analytics<br>
+
+      <p>3. What is a 'bounce rate'?</p>
+      <input type="radio" name="q3" value="a"> The number of people who jump on your website<br>
+      <input type="radio" name="q3" value="b"> The percentage of visitors who leave without interacting<br>
+      <input type="radio" name="q3" value="c"> The time taken to load a page<br>
+
+      <p>4. Fill in the blank: A high _____ rate may indicate users are not finding what they need.</p>
+      <input type="text" name="q4"><br>
+
+      <p>5. What metric tells you how many users complete a desired action?</p>
+      <input type="radio" name="q5" value="a"> Bounce rate<br>
+      <input type="radio" name="q5" value="b"> Conversion rate<br>
+      <input type="radio" name="q5" value="c"> Exit rate<br>
+
+      <button type="button" onclick="submitQuiz()">Submit</button>
+      <button type="button" onclick="restartQuiz()">Restart</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function submitQuiz() {
+      let score = 0;
+      const answers = {
+        q1: 'b',
+        q2: 'c',
+        q3: 'b',
+        q4: 'bounce',
+        q5: 'b'
+      };
+
+      if (document.querySelector('input[name="q1"]:checked')?.value === answers.q1) score++;
+      if (document.querySelector('input[name="q2"]:checked')?.value === answers.q2) score++;
+      if (document.querySelector('input[name="q3"]:checked')?.value === answers.q3) score++;
+
+      const q4Answer = document.querySelector('input[name="q4"]').value.trim().toLowerCase();
+      if (q4Answer === answers.q4) score++;
+
+      if (document.querySelector('input[name="q5"]:checked')?.value === answers.q5) score++;
+
+      const resultText = `Score: ${score}/5\n` + (score >= 3 ? 'You Pass!' : 'You Fail.');
+      document.getElementById('result').innerText = resultText;
+    }
+
+    function restartQuiz() {
+      document.getElementById('quizForm').reset();
+      document.getElementById('result').innerText = '';
+    }
+  </script>
+
+</body>
+</html>
