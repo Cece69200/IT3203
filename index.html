@@ -3,101 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dripping Ink</title>
+    <title>TechVibe</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f6fc;
             margin: 0;
             padding: 0;
             text-align: center;
+            color: #333;
         }
+
         .header {
-            background: linear-gradient(to right, purple, pink, blue);
+            background: linear-gradient(to right, #8e44ad, #ff69b4, #00bfff);
             color: white;
-            padding: 20px;
-            font-size: 2em;
+            padding: 30px 20px;
+            font-size: 2.5em;
             font-weight: bold;
+            letter-spacing: 1px;
         }
+
         nav {
-            background: #333;
-            padding: 10px;
+            background: #222;
+            padding: 10px 0;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
         }
-        nav ul li {
-            display: inline;
-        }
+
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.1em;
+            transition: color 0.3s;
         }
+
+        nav ul li a:hover {
+            color: #ff69b4;
+        }
+
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
+
         .gallery {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             gap: 20px;
-            padding: 20px;
+            padding: 20px 0;
         }
-        .instagram-post {
-            width: 100%;
-            max-width: 400px;
-            margin: auto;
+
+        .tech-card {
+            width: 280px;
+            background: linear-gradient(to bottom right, #ffb6c1, #d8b6ff);
+            padding: 20px;
+            border-radius: 12px;
+            color: #222;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .tech-card h3 {
+            margin-top: 0;
+            color: #4b0082;
+        }
+
+        .tech-card p {
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">Dripping Ink</div>
+    <div class="header">TechVibe</div>
 
     <nav>
         <ul>
            <li><a href="index.html">Home</a></li>
-            <li><a href="TechOverTheYears.html">TechOverTheYears</a></li>
+            <li><a href="Drippingink.html">Drippingink</a></li>
             <li><a href="Refrencecode.html">References</a></li>
-            <li><a href="HistoryQuiz.html">ArtQuiz</a></li>  
+            <li><a href="HistoryQuiz.html">ArtQuiz</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <h2>About Me</h2>
-        <p>Hi, I'm an artist born in Michigan. I create everything from paintings, clothing, and tattoos to face painting.</p>
-        <div class="instagram-post">
-            <iframe src="https://www.instagram.com/p/CrCHgiBg-CB/embed" width="400" height="500" frameborder="0"></iframe>
-        </div>
+        <h2>Welcome to TechVibe</h2>
+        <p>Explore the latest in technology, design, and innovation. From app development to futuristic UI/UX, TechVibe is your portal to the digital frontier.</p>
     </div>
 
     <div class="container">
-        <h2>My Artwork</h2>
+        <h2>Featured Tech Projects</h2>
         <div class="gallery">
-            <div class="instagram-post">
-                <iframe src="https://www.instagram.com/reel/C1YLzUaAHVp/embed" width="400" height="500" frameborder="0"></iframe>
+            <div class="tech-card">
+                <h3>Smart Home App</h3>
+                <p>Designed an intuitive app to control lights, security, and devices with seamless voice and touch integration.</p>
             </div>
-            <div class="instagram-post">
-                <iframe src="https://www.instagram.com/p/CH9E8SlgFhP/embed" width="400" height="500" frameborder="0"></iframe>
+            <div class="tech-card">
+                <h3>AI Chatbot</h3>
+                <p>Developed a conversational AI for e-commerce platforms that boosted customer engagement by 45%.</p>
             </div>
-            <div class="instagram-post">
-                <iframe src="https://www.instagram.com/reel/C1YB0cwgDv4/embed" width="400" height="500" frameborder="0"></iframe>
+            <div class="tech-card">
+                <h3>VR Showcase</h3>
+                <p>Created an immersive virtual reality experience to preview real estate properties remotely.</p>
             </div>
         </div>
     </div>
 
+    <footer>
+        &copy; 2025 TechVibe. All rights reserved.
+    </footer>
+
 </body>
 </html>
-
