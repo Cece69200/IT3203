@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Web Analytics 101</title>
+  <title>Examples of Web Analytics</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fef6ff;
       margin: 0;
       padding: 0;
-      background-color: #f6f2fa;
-      color: #333;
       text-align: center;
     }
 
@@ -20,127 +19,126 @@
       padding: 60px 20px;
       font-size: 2.5em;
       font-weight: bold;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
     }
 
     nav {
-      background-color: #222;
+      background: #3a0ca3;
       padding: 10px 0;
     }
 
     nav ul {
       list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
       padding: 0;
       margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: 1.2em;
       transition: color 0.3s;
     }
 
     nav ul li a:hover {
-      color: #ff69b4;
+      color: #ffb6f9;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 30px;
-      background: white;
+    .description {
+      padding: 30px 20px;
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #444;
+    }
+
+    .examples {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 40px 20px;
+    }
+
+    .example-box {
+      background: linear-gradient(to bottom right, #ffc0cb, #d1c4e9);
       border-radius: 15px;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 700px;
       text-align: left;
     }
 
-    .section-title {
-      font-size: 1.8em;
-      color: #6a1b9a;
-      margin-bottom: 15px;
+    .example-title {
+      font-size: 1.3em;
+      color: #4a148c;
+      margin-bottom: 10px;
+      font-weight: bold;
     }
 
-    .benefits {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-around;
-      margin-top: 20px;
-    }
-
-    .benefit-box {
-      background: linear-gradient(to bottom right, #ffc0cb, #b39ddb);
-      padding: 20px;
-      border-radius: 12px;
-      width: 260px;
+    .example-text {
+      font-size: 1em;
       color: #333;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-      font-size: 0.9em;
-      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <div class="header">Web Analytics 101</div>
+  <div class="header">Examples of Web Analytics</div>
 
   <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-      <li><a href="ExamplesOfWebAnalytics">ExamplesOfWebAnalytics</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ExamplesOfWebAnalytics.html">ExamplesOfWebAnalytics</a></li>
       <li><a href="Refrencecode.html">References</a></li>
       <li><a href="HistoryQuiz.html">ArtQuiz</a></li>
     </ul>
   </nav>
 
-  <div class="container">
-    <h2 class="section-title">What is Web Analytics?</h2>
-    <p>
-      Web analytics is the process of collecting, analyzing, and reporting website data to understand and improve online performance. It helps website owners and businesses track visitor behavior, measure traffic sources, and evaluate the effectiveness of their content and marketing efforts.
-    </p>
-    <p>
-      By using tools like Google Analytics, website administrators can learn what pages people visit, how long they stay, what devices they use, and where they're coming from.
-    </p>
+  <div class="description">
+    Web analytics helps businesses understand how visitors use a website. Here are key examples of how it is applied in real-world scenarios.
   </div>
 
-  <div class="container">
-    <h2 class="section-title">Why is Web Analytics Important?</h2>
-    <div class="benefits">
-      <div class="benefit-box">
-        <h3>Understand Your Audience</h3>
-        <p>Track who visits your site and how they interact with your content.</p>
+  <div class="examples">
+    <div class="example-box">
+      <div class="example-title">Tracking Traffic Sources</div>
+      <div class="example-text">
+        Analyzing which channels (e.g., search engines, social media, email campaigns) are driving the most visitors to a website helps optimize marketing efforts.
       </div>
-      <div class="benefit-box">
-        <h3>Improve User Experience</h3>
-        <p>Discover which pages work best and where users drop off.</p>
+    </div>
+
+    <div class="example-box">
+      <div class="example-title">Analyzing User Behavior</div>
+      <div class="example-text">
+        Examining how users navigate a website, which pages they visit most often, and where they drop off can reveal areas for improvement in user experience.
       </div>
-      <div class="benefit-box">
-        <h3>Boost Conversions</h3>
-        <p>Use data to optimize marketing and increase sales or engagement.</p>
+    </div>
+
+    <div class="example-box">
+      <div class="example-title">Monitoring Conversions</div>
+      <div class="example-text">
+        Tracking key actions users take on a website, such as making a purchase or filling out a form, provides insights into the effectiveness of marketing campaigns and website design.
+      </div>
+    </div>
+
+    <div class="example-box">
+      <div class="example-title">A/B Testing</div>
+      <div class="example-text">
+        Using web analytics to compare different versions of a webpage or email to see which performs better, helping optimize for better user engagement and conversions.
+      </div>
+    </div>
+
+    <div class="example-box">
+      <div class="example-title">Keyword Research</div>
+      <div class="example-text">
+        Analyzing which keywords drive traffic to a website helps identify opportunities for improving SEO and targeting the right audience.
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <h2 class="section-title">Example Tool: Google Analytics</h2>
-    <p>Google Analytics is a free tool by Google that tracks and reports website traffic. It provides insights into how users find and use your site, helping you make informed decisions.</p>
-  </div>
-
-  <footer>
-    &copy; 2025 Web Analytics 101. All rights reserved.
-  </footer>
-
 </body>
 </html>
-
 
